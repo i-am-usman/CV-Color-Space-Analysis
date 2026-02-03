@@ -3,6 +3,8 @@ import numpy as np
 
 # 1. Load and normalize image to 0-1 range
 img = cv2.imread('WhatsApp Image 2026-02-01 at 11.42.52 PM.jpeg').astype(float) / 255.0
+size = (500, 500)
+img = cv2.resize(img, size)
 b, g, r = cv2.split(img)
 
 # 2. Calculate the 'Black' (K) channel
