@@ -3,7 +3,8 @@ import numpy as np
 
 # 1. Load the image
 image = cv2.imread('WhatsApp Image 2026-02-01 at 11.42.52 PM.jpeg')
-
+size = (500, 500)
+image = cv2.resize(image, size)
 # 2. Split into Blue, Green, and Red channels
 # Remember: OpenCV uses BGR order!
 b, g, r = cv2.split(image)
