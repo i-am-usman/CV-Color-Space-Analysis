@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 
 img = cv2.imread('WhatsApp Image 2026-02-01 at 11.42.52 PM.jpeg')
-
+size = (500, 500)
+img = cv2.resize(img, size)
 # 1. HSV Removal
 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 h, s, v = cv2.split(hsv)
