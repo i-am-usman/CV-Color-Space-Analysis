@@ -23,7 +23,7 @@ m = (m * 255).astype(np.uint8)
 y = (y * 255).astype(np.uint8)
 k = (k * 255).astype(np.uint8)
 
-# Show them!
+# Results
 cv2.imshow("Cyan", c)
 cv2.imshow("Magenta", m)
 cv2.imshow("Yellow", y)
